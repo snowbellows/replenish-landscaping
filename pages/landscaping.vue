@@ -5,7 +5,7 @@
       <div>
         <div>
           <img
-            src="../assets/logo.png"
+            src="../assets/logo1.svg"
             alt="Replenish Landscaping Logo"
             class="logo"
           />

@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item">
-          Replenish Landscaping
+          <img src="../assets/logo1.svg" alt="" />
         </nuxt-link>
         <a
           role="button"
