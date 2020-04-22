@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item">
-          <img src="../assets/logo1.svg" alt="" />
+          Replenish Landscaping
         </nuxt-link>
         <a
           role="button"
@@ -111,6 +111,9 @@ html {
   .navbar-item {
     font-family: $family-secondary;
     font-size: 1.5rem;
+    // text-align: center;
+    // color: $darkgreen;
+    padding: 10px 20px;
 
     @media (max-width: 724px) {
       font-size: 1.3rem;
