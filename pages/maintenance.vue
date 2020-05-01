@@ -41,7 +41,7 @@ export default {
 }
 
 .header-image {
-  background-image: url('../assets/shed.jpg');
+  background-image: url('../assets/images/shed.jpg');
   @include header-image;
 }
 </style>
