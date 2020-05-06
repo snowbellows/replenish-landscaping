@@ -4,13 +4,6 @@
     <div class="container">
       <div>
         <div>
-          <img
-            src="../assets/logo1.svg"
-            alt="Replenish Landscaping Logo"
-            class="logo"
-          />
-        </div>
-        <div>
           <p class="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -20,6 +13,13 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </div>
+        <div>
+          <img
+            src="../assets/logo1.svg"
+            alt="Replenish Landscaping Logo"
+            class="logo"
+          />
         </div>
       </div>
     </div>

@@ -3,7 +3,11 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item">
-          Replenish Landscaping
+          <img
+            src="../assets/logo1-web.svg"
+            alt="Replenish Landscaping Logo"
+            class="logo"
+          />
         </nuxt-link>
         <a
           role="button"
@@ -114,6 +118,10 @@ html {
     // text-align: center;
     // color: $darkgreen;
     padding: 10px 20px;
+
+    img.logo {
+      max-height: 3rem;
+    }
 
     @media (max-width: 724px) {
       font-size: 1.3rem;
