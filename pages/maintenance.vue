@@ -6,7 +6,7 @@
         <div>
           <img
             src="../assets/images/maintenance.jpg"
-            alt="Frame of a wooden step mid construction"
+            alt="Freshly mown lawn with rustic scuptural piece"
             class="image-border"
           />
         </div>
@@ -45,7 +45,7 @@
         <div>
           <img
             src="../assets/images/fire pit fixing old retaining wall and turfing.jpg"
-            alt="Finished wooden step with natural patterning"
+            alt="Fixed old retaining wall that backs on to a well maintained lawn and garden area"
             class="image-border"
           />
         </div>

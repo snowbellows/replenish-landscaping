@@ -31,19 +31,19 @@
         <div>
           <img
             src="../assets/images/20191031_142349.jpg"
-            alt="Frame of a wooden step mid construction"
+            alt="Poorly maintained retaining wall before reconstruction work"
             class="image-border"
           />
           <img
             src="../assets/images/20191031_142403.jpg"
-            alt="Frame of a wooden step mid construction"
+            alt="Another angle of retaining wall before reconstruction work"
             class="image-border"
           />
         </div>
         <div>
           <img
             src="../assets/images/20191107_112230.jpg"
-            alt="Finished wooden step with natural patterning"
+            alt="Retaining wall after reconstruction work with stairs added"
             class="image-border"
           />
         </div>
