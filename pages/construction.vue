@@ -25,7 +25,7 @@
         <div>
           <img
             src="../assets/images/rock edging and pebbled walking area.jpg"
-            alt="Finished wooden step with natural patterning"
+            alt="Newly built rock edging on garden bed with pebbled walking area and stepping stones"
             class="image-border"
           />
         </div>
@@ -34,14 +34,14 @@
         <div>
           <img
             src="../assets/images/20171228_154709.jpg"
-            alt="Frame of a wooden step mid construction"
+            alt="Cutouts for construction of new stairs"
             class="image-border"
           />
         </div>
         <div>
           <img
             src="../assets/images/20180715_141312.jpg"
-            alt="Finished wooden step with natural patterning"
+            alt="Finished stairs in a dark stone tile with pale grout"
             class="image-border"
           />
         </div>
@@ -83,7 +83,7 @@
         <div>
           <img
             src="../assets/images/20200330_150557.jpg"
-            alt="Finished wooden step with natural patterning"
+            alt="Well maintained lawn area with newly built stone firepit topped with pavers for a flat surface"
             class="image-border"
           />
         </div>

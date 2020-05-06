@@ -6,7 +6,7 @@
         <div>
           <img
             src="../assets/images/20191026_124550.jpg"
-            alt="Frame of a wooden step mid construction"
+            alt="Raised wooden garden bed in process of construction"
             class="image-border"
           />
         </div>
