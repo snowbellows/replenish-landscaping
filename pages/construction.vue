@@ -48,11 +48,11 @@
       </div>
       <div class="text">
         <p>
-          Metals these are rarer to see in the design for an outdoor space,
-          however they have their uses in fencing, garden beds, washing lines,
-          gabion baskets, sculptural features, benches, lighting and more. Using
-          metal materials can produce a sense of ease and fills practical needs
-          of an outdoor space.
+          Metals are rarer to see in the design for an outdoor space, however
+          they have their uses in fencing, garden beds, washing lines, gabion
+          baskets, sculptural features, benches, lighting and more. Using metal
+          materials can produce a sense of ease and fills practical needs of an
+          outdoor space.
         </p>
         <p>
           Plastics are versatile but have limited use in our business due to
