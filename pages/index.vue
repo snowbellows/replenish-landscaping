@@ -39,9 +39,9 @@
       <div class="centre">
         <p class="text">
           Here you can find out more about what services we provide in
-          <nuxt-link to="/what-we-do">design</nuxt-link>,
-          <nuxt-link to="/what-we-do">construction</nuxt-link> and
-          <nuxt-link to="/what-we-do">maintenance</nuxt-link> , learn
+          <nuxt-link to="/design">design</nuxt-link>,
+          <nuxt-link to="/construction">construction</nuxt-link> and
+          <nuxt-link to="/maintenance">maintenance</nuxt-link> , learn
           <nuxt-link to="/about"> more about us </nuxt-link> as a company and
           our vision for the future and find
           <nuxt-link to="/contact"> contact details </nuxt-link> for a free
