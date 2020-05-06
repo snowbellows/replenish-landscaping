@@ -39,18 +39,25 @@
           </nuxt-link>
 
           <nuxt-link
+            to="/design"
+            class="navbar-item is-tab"
+            :class="{ 'is-active': isActive('design') }"
+          >
+            Design
+          </nuxt-link>
+          <nuxt-link
+            to="/construction"
+            class="navbar-item is-tab"
+            :class="{ 'is-active': isActive('construction') }"
+          >
+            Construction
+          </nuxt-link>
+          <nuxt-link
             to="/maintenance"
             class="navbar-item is-tab"
             :class="{ 'is-active': isActive('maintenance') }"
           >
             Maintenance
-          </nuxt-link>
-          <nuxt-link
-            to="/landscaping"
-            class="navbar-item is-tab"
-            :class="{ 'is-active': isActive('landscaping') }"
-          >
-            Landscaping
           </nuxt-link>
           <nuxt-link
             to="/contact"
@@ -63,6 +70,12 @@
       </div>
     </nav>
     <nuxt />
+
+    <footer>
+      <div>
+        &copy; Replenish Landscaping 2020
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -76,7 +89,7 @@ export default {
   },
   watch: {
     '$route.path'() {
-      this.toggleBurger();
+      this.showBurger = false;
     }
   },
   methods: {
@@ -104,6 +117,13 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-size: 1.3rem;
+  @media (max-width: $tablet) {
+    font-size: 1rem;
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -113,27 +133,44 @@ html {
 
 .navbar-brand {
   .navbar-item {
-    font-family: $family-secondary;
-    font-size: 1.5rem;
-    // text-align: center;
-    // color: $darkgreen;
     padding: 10px 20px;
 
     img.logo {
-      max-height: 3rem;
+      max-height: 4rem;
+      @media (max-width: $tablet) {
+        max-height: 2.5rem;
+      }
     }
+  }
 
-    @media (max-width: 724px) {
-      font-size: 1.3rem;
+  .navbar-burger {
+    width: calc(4rem + 20px) !important;
+    height: calc(4rem + 20px) !important;
+    @media (max-width: $tablet) {
+      width: calc(2.5rem + 20px) !important;
+      height: calc(2.5rem + 20px) !important;
     }
   }
 }
 
 .navbar-menu.is-active {
-  @media (max-width: 724px) {
-    position: fixed;
-    left: 0;
-    right: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 0.875rem;
+
+  div {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    border-top: 1px solid rgba($darkgrey, 0.3);
   }
 }
 </style>
