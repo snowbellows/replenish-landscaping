@@ -13,9 +13,10 @@
         <p>
           Replenish Landscaping provides construction, design and maintenance
           for individuals and businesses in Canberra and the surrounding area.
-          We strive to use industry forward practices and materials providing an
-          environmentally sound and customer-focused solution to our clients at
-          a highly competitive rate. Providing this type of service requires a
+          We strive to use industry forward practices, quality materials to
+          provide an environmentally sound and customer-focused solution to our
+          clients. Not only all this but we manage these quality products at a
+          highly competitive rate. Providing this type of service requires a
           founding in traditional industry best practice, an eye on the future
           and an insatiable appetite for learning.
         </p>
