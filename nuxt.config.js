@@ -35,6 +35,12 @@ export default {
         href: '/favicon-16x16.png'
       },
       { rel: 'manifest', href: '/site.webmanifest' }
+    ],
+    script: [
+      {
+        src: 'https://kit.fontawesome.com/db5a147b47.js',
+        crossorigin: 'anonymous'
+      }
     ]
   },
   /*
