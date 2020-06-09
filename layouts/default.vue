@@ -71,7 +71,7 @@
     </nav>
     <nuxt />
 
-    <footer>
+    <footer class="mb-4">
       <div>
         &copy; Replenish Landscaping 2020
       </div>
@@ -161,7 +161,6 @@ body {
 
 footer {
   margin-top: 40px;
-  margin-bottom: 20px;
   padding: 0px 20px;
   text-align: center;
   font-size: 0.875rem;
