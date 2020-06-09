@@ -9,6 +9,18 @@
           class="logo"
         />
       </div>
+      <div class="reviews" role="region" aria-label="reviews">
+        <review :stars="5" date="14th May 2020">
+          <span slot="reviewer">Elvis Gleeson</span>
+          <slot>
+            Reon from Replenish Landscaping mowed and trimmed my yard for an
+            excellent rate. The property looks amazing and so I would highly
+            recommend him for his work ethic, attention to detail, and
+            professionalism.
+          </slot>
+        </review>
+        <review></review>
+      </div>
       <div class="text">
         <p>
           Replenish Landscaping provides construction, design and maintenance
@@ -54,8 +66,13 @@
 </template>
 
 <script>
+import Review from '../components/Review.vue';
+
 export default {
-  components: {}
+  name: 'Home',
+  components: {
+    Review
+  }
 };
 </script>
 
@@ -83,5 +100,10 @@ export default {
   @media (max-width: $tablet) {
     font-size: 1.3rem;
   }
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around !important;
 }
 </style>
