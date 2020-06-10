@@ -24,7 +24,6 @@
             professionalism.
           </slot>
         </review>
-        <review></review>
       </div>
       <div class="text">
         <p>
@@ -110,5 +109,6 @@ export default {
 .reviews {
   display: flex;
   justify-content: space-around !important;
+  margin: 30px 0;
 }
 </style>

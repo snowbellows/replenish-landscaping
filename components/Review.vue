@@ -65,7 +65,6 @@ export default {
   border: 6px solid $darkgrey;
   box-shadow: 5px 5px 5px lightgray;
   // background-color: $darkgrey;
-  margin: 30px;
 
   .stars {
     display: flex;
