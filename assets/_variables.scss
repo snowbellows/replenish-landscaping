@@ -17,7 +17,7 @@ $fullhd: 1344px;
   src: url('/fonts/Bodoni-11-Medium.otf') format('opentype');
 }
 
-$family-secondary: 'Bodoni', 'Garamond', 'Times New Roman', serif;
+$family-secondary: 'Bodoni Italic', 'Garamond', 'Times New Roman', serif;
 
 /* Mixins */
 
@@ -71,6 +71,7 @@ $family-secondary: 'Bodoni', 'Garamond', 'Times New Roman', serif;
 
       h2 {
         font-family: $family-secondary;
+        font-style: italic;
         font-size: 2.5rem;
         margin-bottom: 1rem;
 
@@ -87,7 +88,7 @@ $family-secondary: 'Bodoni', 'Garamond', 'Times New Roman', serif;
 }
 
 .image-border {
-  border: 10px solid $darkgrey;
+  border: 6px solid $darkgrey;
   box-shadow: 5px 5px 5px lightgray;
   background-color: $darkgrey;
 }
