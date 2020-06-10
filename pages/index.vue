@@ -10,7 +10,12 @@
         />
       </div>
       <div class="reviews" role="region" aria-label="reviews">
-        <review :stars="5" date="14th May 2020">
+        <review
+          :stars="5"
+          date="14th May 2020"
+          type="facebook"
+          link="https://www.facebook.com/elvis.gleeson/posts/3175224002509219"
+        >
           <span slot="reviewer">Elvis Gleeson</span>
           <slot>
             Reon from Replenish Landscaping mowed and trimmed my yard for an
