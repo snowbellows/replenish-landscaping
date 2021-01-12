@@ -39,16 +39,18 @@
       <div>
         <div>
           <img
-            src="../assets/images/vegtable patch and sitting area.jpg"
-            alt="Construction of a vegetable patch and sitting area"
-            class="image-border"
+            src="~/assets/images/wood-retainer-and-paving/small/20200802_135427.jpg"
+            data-src="~/assets/images/wood-retainer-and-paving/large/20200802_135427.jpg"
+            alt="Large wooden retaining wall under construction"
+            class="image-border lazyload"
           />
         </div>
         <div>
           <img
-            src="../assets/images/maintenance.jpg"
-            alt="Freshly mown lawn with rustic scuptural piece"
-            class="image-border"
+            src="~/assets/images/wood-retainer-and-paving/small/20201205_110831.jpg"
+            data-src="~assets/images/wood-retainer-and-paving/large/20201205_110831.jpg"
+            alt="Finished wood retaining wall and paved steps"
+            class="image-border lazyload"
           />
         </div>
       </div>
