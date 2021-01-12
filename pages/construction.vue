@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="header-image"></div>
     <div class="container">
       <div>
         <div>
@@ -104,11 +103,6 @@ export default {
 .logo {
   height: 320px;
   flex: 0 0 auto;
-}
-
-.header-image {
-  background-image: url('../assets/images/rock edging and pebbled walking area.jpg');
-  @include header-image;
 }
 
 .text {

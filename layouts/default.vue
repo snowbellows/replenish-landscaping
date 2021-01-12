@@ -69,6 +69,7 @@
         </div>
       </div>
     </nav>
+    <div class="header-image-main"></div>
     <nuxt />
 
     <footer class="mb-4">
@@ -183,6 +184,11 @@ body {
   position: fixed;
   left: 0;
   right: 0;
+}
+
+.header-image-main {
+  background-image: url('../assets/images/header-image.jpg');
+  @include header-image;
 }
 
 footer {

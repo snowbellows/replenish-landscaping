@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="header-image"></div>
     <div class="container">
       <div>
         <img
@@ -82,11 +81,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/_variables.scss';
-
-.header-image {
-  background-image: url('../assets/images/shed.jpg');
-  @include header-image;
-}
 
 .logo {
   width: 100%;

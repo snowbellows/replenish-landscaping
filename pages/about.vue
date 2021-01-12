@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="header-image"></div>
     <div class="container">
       <div>
         <div>
@@ -73,10 +72,5 @@ export default {
 .logo {
   height: 320px;
   flex: 0 0 auto;
-}
-
-.header-image {
-  background-image: url('../assets/images/maintenance.jpg');
-  @include header-image;
 }
 </style>
