@@ -101,7 +101,7 @@
           </ul>
         </div>
       </div>
-      <div>&copy; Replenish Landscaping 2020</div>
+      <div>&copy; Replenish Landscaping 2020 - 2021</div>
     </footer>
   </div>
 </template>
