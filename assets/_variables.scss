@@ -6,10 +6,10 @@ $lightgreen-invert: #744036;
 $darkgrey: #363636;
 
 /* Breakpoints */
-$tablet: 724px;
-$desktop: 960px;
-$widescreen: 1152px;
-$fullhd: 1344px;
+$tablet: 767px;
+$desktop: 1024px;
+$widescreen: 1216px;
+$fullhd: 1408px;
 
 /* Fonts */
 @font-face {
@@ -22,7 +22,7 @@ $family-secondary: 'Bodoni Italic', 'Garamond', 'Times New Roman', serif;
 /* Mixins */
 
 @mixin header-image {
-  background-position: center;
+  background-position: 100% 70%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 200px;
@@ -30,9 +30,16 @@ $family-secondary: 'Bodoni Italic', 'Garamond', 'Times New Roman', serif;
   border-bottom: 10px solid $darkgrey;
   background-color: $darkgrey;
 
+  @media (max-width: $desktop) {
+    height: 130px;
+    background-size: 120%;
+    background-position: 100% 80%;
+  }
+
   @media (max-width: $tablet) {
-    height: 150px;
-    background-size: 200%;
+    height: 100px;
+    background-size: 150%;
+    background-position: 100% 90%;
   }
 }
 
@@ -59,6 +66,16 @@ $family-secondary: 'Bodoni Italic', 'Garamond', 'Times New Roman', serif;
       padding: 20px;
       flex-direction: column;
       justify-content: center;
+
+      & > * {
+        @media (max-width: $desktop) {
+          width: 70%;
+        }
+
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+      }
     }
 
     & > div {
@@ -70,6 +87,10 @@ $family-secondary: 'Bodoni Italic', 'Garamond', 'Times New Roman', serif;
       }
 
       @media (max-width: $desktop) {
+        width: 70%;
+      }
+
+      @media (max-width: $tablet) {
         width: 100%;
       }
 
