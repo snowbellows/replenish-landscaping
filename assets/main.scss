@@ -14,11 +14,5 @@ $primary: $darkgreen;
 $secondary: #d0e0ee;
 $link: $lightgreen;
 
-// Breakpoints
-$tablet: 724px;
-$desktop: 960px + (2 * $gap);
-$widescreen: 1152px + (2 * $gap);
-$fullhd: 1344px + (2 * $gap);
-
 /* Import the rest of Bulma */
 @import '~bulma';

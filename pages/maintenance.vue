@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="header-image"></div>
     <div class="container">
       <div>
         <div>
           <img
-            src="../assets/images/maintenance.jpg"
-            alt="Freshly mown lawn with rustic scuptural piece"
-            class="image-border"
+            src="~/assets/images/maintenance/small/20201110_102645.jpg"
+            data-src="~/assets/images/maintenance/large/20201110_102645.jpg"
+            alt="Manicured round and square topiary hedges."
+            class="image-border lazyload"
           />
         </div>
         <div>
@@ -66,10 +66,5 @@ export default {
 .logo {
   height: 320px;
   flex: 0 0 auto;
-}
-
-.header-image {
-  background-image: url('../assets/images/rock edging and pebbled walking area.jpg');
-  @include header-image;
 }
 </style>

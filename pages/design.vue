@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="header-image"></div>
     <div class="container">
       <div>
         <div>
           <img
-            src="../assets/images/20191026_124550.jpg"
-            alt="Raised wooden garden bed in process of construction"
-            class="image-border"
+            src="~/assets/images/design/small/LandscapingDesign_001.jpg"
+            data-src="~/assets/images/design/large/LandscapingDesign_001.jpg"
+            alt="Computer assisted design of a swimming pool surrounded by leafy trees"
+            class="image-border lazyload"
           />
         </div>
         <div>
           <h2>Design</h2>
           <p>
-            Using latest standards and techniques ‘Replenish Landscaping’
-            creates small to large residential designs to fill any client need.
-            Through 3D drawings, architectural plans and precise discussion with
-            clients we are able to create much loved outlays of potential with
-            space given.
+            Using traditional techniques and the latest tools ‘Replenish
+            Landscaping’ creates small to large residential designs to fill any
+            client need. Through quick drafts, 3D drawings, architectural plans
+            and precise discussion with clients we are able to create much loved
+            outlays of potential with space given.
           </p>
           <p>
             Hanging gardens, vertical planting, 3D ponds, multi-level planning
@@ -29,16 +29,18 @@
       <div>
         <div>
           <img
-            src="../assets/images/20200122_170358.jpg"
-            alt="Frame of a wooden step mid construction"
-            class="image-border"
+            src="~/assets/images/design/small/20200906_133814.jpg"
+            data-src="~/assets/images/design/large/20200906_133814.jpg"
+            alt="Detailed and annotated pen sketch of a custom water feature."
+            class="image-border lazyload"
           />
         </div>
         <div>
           <img
-            src="../assets/images/20200123_130127.jpg"
-            alt="Finished wooden step with natural patterning"
-            class="image-border"
+            src="~/assets/images/design/small/LandscapingDesign_006.jpg"
+            data-src="~/assets/images/design/large/LandscapingDesign_006.jpg"
+            alt="Computer assisted design of a curved garden area with flowering plants and inset paved path."
+            class="image-border lazyload"
           />
         </div>
       </div>
@@ -58,10 +60,5 @@ export default {
 .logo {
   height: 320px;
   flex: 0 0 auto;
-}
-
-.header-image {
-  background-image: url('../assets/images/rock edging and pebbled walking area.jpg');
-  @include header-image;
 }
 </style>
