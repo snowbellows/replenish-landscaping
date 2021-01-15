@@ -29,21 +29,18 @@
       <div>
         <div>
           <img
-            src="../assets/images/20191031_142349.jpg"
-            alt="Poorly maintained retaining wall before reconstruction work"
-            class="image-border"
-          />
-          <img
-            src="../assets/images/20191031_142403.jpg"
-            alt="Another angle of retaining wall before reconstruction work"
-            class="image-border"
+            src="~/assets/images/concrete-retaining-wall/small/20201205_112507.jpg"
+            data-src="~/assets/images/concrete-retaining-wall/large/20201205_112507.jpg"
+            alt="Fresh paving around a back door."
+            class="image-border lazyload"
           />
         </div>
         <div>
           <img
-            src="../assets/images/20191107_112230.jpg"
-            alt="Retaining wall after reconstruction work with stairs added"
-            class="image-border"
+            src="~/assets/images/paved-edge/small/paved-edge-4.jpg"
+            data-src="~/assets/images/paved-edge/large/paved-edge-4.jpg"
+            alt="New paved edge along existing treeline."
+            class="image-border lazyload"
           />
         </div>
       </div>

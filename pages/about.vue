@@ -21,18 +21,20 @@
         </div>
         <div>
           <img
-            src="../assets/images/shed.jpg"
-            alt="Rustic shed in a well kept cottage garden"
-            class="image-border"
+            src="~/assets/images/concrete-retaining-wall/small/20201205_112603.jpg"
+            data-src="~/assets/images/concrete-retaining-wall/large/20201205_112603.jpg"
+            alt="Brick-look concrete retaining wall"
+            class="image-border lazyload"
           />
         </div>
       </div>
       <div>
         <div>
           <img
-            src="../assets/images/20180619_122036.jpg"
-            alt="Construction of a stone wall"
-            class="image-border"
+            src="~/assets/images/design/small/LandscapingDesign_007.jpg"
+            data-src="~/assets/images/design/large/LandscapingDesign_007.jpg"
+            alt="Computer assisted design of a manicured front yard with native bushes and water feature"
+            class="image-border lazyload"
           />
         </div>
         <div>

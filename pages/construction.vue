@@ -23,25 +23,28 @@
         </div>
         <div>
           <img
-            src="../assets/images/rock edging and pebbled walking area.jpg"
-            alt="Newly built rock edging on garden bed with pebbled walking area and stepping stones"
-            class="image-border"
+            src="~/assets/images/wood-retainer-and-paving/small/20200726_104654.jpg"
+            data-src="~/assets/images/wood-retainer-and-paving/large/20200726_104654.jpg"
+            alt="With back to camera a worker measures out posts for a timber retaining wall."
+            class="image-border lazyload"
           />
         </div>
       </div>
       <div>
         <div>
           <img
-            src="../assets/images/20171228_154709.jpg"
-            alt="Cutouts for construction of new stairs"
-            class="image-border"
+            src="~/assets/images/wood-retainer-and-paving/small/20200802_135427.jpg"
+            data-src="~/assets/images/wood-retainer-and-paving/large/20200802_135427.jpg"
+            alt="Work in progress showing a completed retaining wall holding back piles of dirt."
+            class="image-border lazyload"
           />
         </div>
         <div>
           <img
-            src="../assets/images/20180715_141312.jpg"
-            alt="Finished stairs in a dark stone tile with pale grout"
-            class="image-border"
+            src="~/assets/images/wood-retainer-and-paving/small/20201205_110810.jpg"
+            data-src="~/assets/images/wood-retainer-and-paving/large/20201205_110810.jpg"
+            alt="Finished retaining wall with plants and grey pavers."
+            class="image-border lazyload"
           />
         </div>
       </div>
@@ -81,9 +84,10 @@
         </div>
         <div>
           <img
-            src="../assets/images/20200330_150557.jpg"
-            alt="Well maintained lawn area with newly built stone firepit topped with pavers for a flat surface"
-            class="image-border"
+            src="~/assets/images/concreting/small/20200906_103028.jpg"
+            data-src="~/assets/images/concreting/large/20200906_103028.jpg"
+            alt="Resurfaced concrete driveway"
+            class="image-border lazyload"
           />
         </div>
       </div>

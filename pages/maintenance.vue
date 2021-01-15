@@ -4,9 +4,10 @@
       <div>
         <div>
           <img
-            src="../assets/images/maintenance.jpg"
-            alt="Freshly mown lawn with rustic scuptural piece"
-            class="image-border"
+            src="~/assets/images/maintenance/small/20201110_102645.jpg"
+            data-src="~/assets/images/maintenance/large/20201110_102645.jpg"
+            alt="Manicured round and square topiary hedges."
+            class="image-border lazyload"
           />
         </div>
         <div>
