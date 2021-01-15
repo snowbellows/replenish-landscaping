@@ -87,10 +87,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, { isDev, isClient, loaders: { vue } }) {
-      if (isClient || isDev) {
-        vue.transformAssetUrls.img = ['data-src', 'src'];
-        vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
-      }
+      vue.transformAssetUrls.img = ['data-src', 'src'];
+      vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
     }
   }
 };
