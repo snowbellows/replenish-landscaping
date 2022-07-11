@@ -29,42 +29,15 @@
         class="navbar-menu"
         :class="{ 'is-active': showBurger }"
       >
-        <div class="navbar-start">
+        <div v-if="pages" class="navbar-start">
           <nuxt-link
-            to="/about"
+            v-for="page in pages"
+            :key="page.id"
+            :to="`/${page.attributes.slug}`"
             class="navbar-item is-tab"
             :class="{ 'is-active': isActive('about') }"
           >
-            About
-          </nuxt-link>
-
-          <nuxt-link
-            to="/design"
-            class="navbar-item is-tab"
-            :class="{ 'is-active': isActive('design') }"
-          >
-            Design
-          </nuxt-link>
-          <nuxt-link
-            to="/construction"
-            class="navbar-item is-tab"
-            :class="{ 'is-active': isActive('construction') }"
-          >
-            Construction
-          </nuxt-link>
-          <nuxt-link
-            to="/maintenance"
-            class="navbar-item is-tab"
-            :class="{ 'is-active': isActive('maintenance') }"
-          >
-            Maintenance
-          </nuxt-link>
-          <nuxt-link
-            to="/contact"
-            class="navbar-item is-tab"
-            :class="{ 'is-active': isActive('contact') }"
-          >
-            Contact
+            {{ page.attributes.name }}
           </nuxt-link>
         </div>
       </div>
@@ -107,17 +80,25 @@
 </template>
 
 <script>
+import { getPages } from '~/api/queries';
+
 export default {
   name: 'DefaultLayout',
   data() {
     return {
-      showBurger: false
+      showBurger: false,
+      pages: [],
     };
   },
+  async fetch() {
+    const pages = await getPages();
+    this.pages = pages;
+  },
+
   watch: {
     '$route.path'() {
       this.showBurger = false;
-    }
+    },
   },
   methods: {
     toggleBurger() {
@@ -128,8 +109,8 @@ export default {
         return true;
       }
       return false;
-    }
-  }
+    },
+  },
 };
 </script>
 

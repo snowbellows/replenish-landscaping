@@ -1,3 +1,19 @@
+import { getPages } from './api/queries';
+
+async function dynamicRoutes() {
+  try {
+    const pages = await getPages();
+
+    return pages.map((page) => ({
+      route: `/${page.attributes.slug}`,
+      payload: page
+    }));
+  } catch (reason) {
+    console.error(reason);
+    throw new Error('CMS Error: could not get pages');
+  }
+}
+
 export default {
   target: 'static',
   /*
@@ -14,37 +30,37 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
-      { hid: 'og:image', property: 'og:image', content: '/shed.jpg' }
+      { hid: 'og:image', property: 'og:image', content: '/shed.jpg' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/apple-touch-icon.png'
+        href: '/apple-touch-icon.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicon-32x32.png'
+        href: '/favicon-32x32.png',
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicon-16x16.png'
+        href: '/favicon-16x16.png',
       },
-      { rel: 'manifest', href: '/site.webmanifest' }
+      { rel: 'manifest', href: '/site.webmanifest' },
     ],
     script: [
       {
         src: 'https://kit.fontawesome.com/db5a147b47.js',
-        crossorigin: 'anonymous'
-      }
-    ]
+        crossorigin: 'anonymous',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -55,7 +71,7 @@ export default {
    */
   css: [
     { src: 'bulma/bulma.sass', lang: 'sass' },
-    { src: './assets/main.scss', lang: 'scss' }
+    { src: './assets/main.scss', lang: 'scss' },
   ],
   /*
    ** Plugins to load before mounting the App
@@ -66,7 +82,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
   ],
   /*
    ** Nuxt.js modules
@@ -75,6 +91,9 @@ export default {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     // '@nuxtjs/bulma'
   ],
+  generate: {
+    routes: dynamicRoutes
+  },
   /*
    ** Build configuration
    */
@@ -82,9 +101,9 @@ export default {
     postcss: {
       preset: {
         features: {
-          customProperties: false
-        }
-      }
+          customProperties: false,
+        },
+      },
     },
     /*
      ** You can extend webpack config here
@@ -92,6 +111,6 @@ export default {
     extend(config, { isDev, isClient, loaders: { vue } }) {
       vue.transformAssetUrls.img = ['data-src', 'src'];
       vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
-    }
-  }
+    },
+  },
 };
