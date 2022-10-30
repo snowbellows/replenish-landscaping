@@ -20,16 +20,16 @@
     </ul>
     <h4 class="reviewer">
       -
-      <slot name="reviewer">Anonymous</slot>
+      <slot name="reviewer">{{ name }}</slot>
     </h4>
     <div class="comment mt-0">
       <i class="fas fa-quote-left"></i>
-      {{ stars }} out of 5 stars.
+      {{ quote }}
       <slot></slot>
       <i class="fas fa-quote-right"></i>
       <div class="date">
-        <a :href="link" :target="link === '#' ? '_self' : '_blank'">
-          - {{ date }}
+        <a v-if="link" :href="link" target="_blank">
+          - {{ formattedDate }}
           <div
             v-if="type && type === 'facebook'"
             aria-label="View review on Facebook"
@@ -38,6 +38,7 @@
             <i class="fab fa-facebook"></i>
           </div>
         </a>
+        <div v-else>- {{ formattedDate }}</div>
       </div>
     </div>
   </div>
@@ -45,12 +46,19 @@
 
 <script>
 export default {
-  name: 'Review',
+  name: 'ReviewBox',
   props: {
-    stars: { type: Number, default: 3 },
-    date: { type: String, default: '2020' },
-    type: { type: String, default: '' },
-    link: { type: String, default: '#' }
+    stars: { type: Number, required: true },
+    date: { type: String, required: true },
+    quote: { type: String, required: true },
+    name: { type: String, required: true },
+    type: { type: String, default: 'other' },
+    link: { type: String, required: false, default: undefined },
+  },
+  computed: {
+    formattedDate() {
+      return new Date(this.date).toLocaleDateString()
+    }
   }
 };
 </script>
@@ -64,7 +72,8 @@ export default {
   min-height: 12rem;
   border: 6px solid $darkgrey;
   box-shadow: 5px 5px 5px lightgray;
-  // background-color: $darkgrey;
+  max-width: 500px;
+  padding: 15px;
 
   .stars {
     display: flex;

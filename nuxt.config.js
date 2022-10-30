@@ -1,12 +1,12 @@
-import { getPages } from './api/queries';
+import api from './api';
 
 async function dynamicRoutes() {
   try {
-    const pages = await getPages();
+    const pages = await api.then((axios) => axios.get('pages').data);
 
     return pages.map((page) => ({
-      route: `/${page.attributes.slug}`,
-      payload: page
+      route: `/${page.slug}`,
+      payload: page,
     }));
   } catch (reason) {
     console.error(reason);
@@ -72,6 +72,7 @@ export default {
   css: [
     { src: 'bulma/bulma.sass', lang: 'sass' },
     { src: './assets/main.scss', lang: 'scss' },
+    { src: '@wordpress/block-library/build-style/style.css' },
   ],
   /*
    ** Plugins to load before mounting the App
@@ -83,6 +84,7 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
+    '@nuxt/image',
   ],
   /*
    ** Nuxt.js modules
@@ -92,7 +94,7 @@ export default {
     // '@nuxtjs/bulma'
   ],
   generate: {
-    routes: dynamicRoutes
+    routes: dynamicRoutes,
   },
   /*
    ** Build configuration
@@ -113,4 +115,10 @@ export default {
       vue.transformAssetUrls.source = ['data-srcset', 'srcset'];
     },
   },
+  env: {
+    API_URL: process.env.API_URL,
+    API_APPLICATION_USERNAME: process.env.API_APPLICATION_USERNAME,
+    API_APPLICATION_PASSWORD: process.env.API_APPLICATION_PASSWORD,
+  },
+  image: { domains: ['replenishlandscaping.contrabute.tech'] },
 };

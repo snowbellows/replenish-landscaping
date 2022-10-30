@@ -1,18 +1,120 @@
 /* Import Bulma Utilities */
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
+@import './variables';
 
 /* Variable changes go here */
 
-// Colours
-$darkgreen: #063B00;
-$darkgreen-invert: #fff;
-$lightgreen: #A6BD66;
-$lightgreen-invert: #744036;
-
 $primary: $darkgreen;
-$secondary: #d0e0ee;
+$secondary: $bluegrey;
 $link: $lightgreen;
 
 /* Import the rest of Bulma */
 @import '~bulma';
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.3rem;
+  @media (max-width: $tablet) {
+    font-size: 1rem;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+/* Classes */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $family-secondary;
+  font-style: italic;
+  margin-bottom: 1rem;
+
+}
+
+h2 {
+  font-size: 2.5rem;
+
+  @media (max-width: $tablet) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: space-between;
+
+  & > div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $desktop) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.text {
+      padding: 20px;
+      flex-direction: column;
+      justify-content: center;
+
+      & > * {
+        @media (max-width: $desktop) {
+          width: 70%;
+        }
+
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+      }
+    }
+
+    & > div {
+      padding: 10px;
+      width: 45%;
+
+      img {
+        width: 100%;
+      }
+
+      @media (max-width: $desktop) {
+        width: 70%;
+      }
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+
+      
+    }
+  }
+}
+
+
+
+.image-border {
+  border: 6px solid $darkgrey;
+  box-shadow: 5px 5px 5px lightgray;
+  background-color: $darkgrey;
+}
