@@ -12,12 +12,7 @@ export default {
   components: { WPSection },
   async asyncData({ params, error, payload }) {
     const slug = params.slug || 'home';
-    const page =
-      payload || (await getPage(slug).catch((e) => {
-        if (process.env.NODE_ENV !== 'production') {
-          console.error(e);
-        }
-      }));
+    const page = payload || (await getPage(slug));
     return {
       page,
       slug: params.slug,

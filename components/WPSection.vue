@@ -12,10 +12,13 @@ export default {
 
 <style lang="scss">
 @import '~assets/variables';
+
 .cms-content {
-  margin: 10px auto;
-  max-width: 1200px;
-  padding: 0 8%;
+  margin: auto;
+  margin-top: 1rem;
+  & > p:not(:first) {
+    margin-top: 1rem;
+  }
 }
 
 .wp-block-media-text__media,
@@ -29,7 +32,7 @@ export default {
   }
 }
 
-.wp-block-column > p{
+.wp-block-column > p {
   padding: 0 8%;
 }
 .has-medium-font-size {

@@ -18,10 +18,10 @@
         <i class="fas fa-star empty"></i>
       </li>
     </ul>
-    <h4 class="reviewer">
+    <div class="reviewer">
       -
       <slot name="reviewer">{{ name }}</slot>
-    </h4>
+    </div>
     <div class="comment mt-0">
       <i class="fas fa-quote-left"></i>
       {{ quote }}
@@ -49,7 +49,7 @@ export default {
   name: 'ReviewBox',
   props: {
     stars: { type: Number, required: true },
-    date: { type: String, required: true },
+    date: { type: Date, required: true },
     quote: { type: String, required: true },
     name: { type: String, required: true },
     type: { type: String, default: 'other' },
@@ -57,7 +57,7 @@ export default {
   },
   computed: {
     formattedDate() {
-      return new Date(this.date).toLocaleDateString()
+      return this.date.toLocaleDateString(undefined, {year: 'numeric', month: 'short', day: 'numeric'})
     }
   }
 };
@@ -74,6 +74,7 @@ export default {
   box-shadow: 5px 5px 5px lightgray;
   max-width: 500px;
   padding: 15px;
+  margin: auto;
 
   .stars {
     display: flex;

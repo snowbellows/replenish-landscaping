@@ -1,4 +1,6 @@
+/* eslint-disable no-console */
 import api from './index';
+import { parseDateString } from '~/utils/data';
 
 export async function getPages() {
   const response = await api.get('pages');
@@ -8,16 +10,34 @@ export async function getPages() {
 }
 
 export async function getPage(slug) {
-  const response = await api.get('pages/', { params: { slug } });
+  const response = await api.get('pages/', { params: { slug } }).catch((e) => {
+    if (process.env.NODE_ENV !== 'production') {
+      console.error(e);
+    }
+  });
   return response.data[0];
 }
 
-export async function getHomePageReview() {
-  const response = await api.get('review/', {
-    params: { home_page_show: true },
-  });
-  const review = response.data[0].acf;
+export async function getHomePageReviews() {
+  const response = await api
+    .get('review/', {
+      params: { home_page_show: true },
+    })
+    .catch((e) => {
+      if (process.env.NODE_ENV !== 'production') {
+        console.error(e);
+      }
+    });
 
-  console.log(review)
-  return response.data[0].acf;
+  const reviews = response.data
+    // We only care about WP custom fields
+    .map((r) => r.acf)
+    // Parse date string (formatted "20220101") to Date
+    .map((r) => ({
+      ...r,
+      date: parseDateString(r.date),
+    }));
+
+  console.log(reviews);
+  return reviews;
 }

@@ -50,7 +50,8 @@ export default {
      * @typedef {object} Page
      * @property {number} id
      * @property {string} slug - url slug
-     * @property {object} title { rendered: string }
+     * @property {object} title 
+     * @property {string} title.rendered
      */
     pages: { type: Array, required: false, default: undefined },
   },

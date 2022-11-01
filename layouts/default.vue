@@ -2,7 +2,9 @@
   <div>
     <nav-bar :pages="pages" />
     <div class="header-image-main"></div>
-    <nuxt />
+    <div class="container is-max-desktop">
+      <nuxt />
+    </div>
     <footer class="mb-4">
       <div class="top-line"></div>
       <div class="columns">
